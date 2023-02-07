@@ -1,0 +1,68 @@
+body{
+    background-color:#00647D;
+}
+.box1{
+    background-color:#00495c;
+    left:0px;
+    top:0px;
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
+    height:130px;
+}
+
+.box1-1{
+    text-align:center;
+}
+
+.box1-1 a{
+    color:white;
+    width:300px;
+    text-align:center;
+    line-height:90px;
+    font-size:50px;
+}
+
+.box1-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box1-2 a{
+    border-radius:4rem;
+    font-size:30px;
+    padding: 1rem 8rem;
+    color:black;
+    background:white;
+    box-shadow: 7.5px 7.5px 0 gray;
+}
+
+.box1-2 a[title="設計理念"]:hover{
+    background-color:#00647D;
+    color:white;
+    box-shadow: 7.5px 7.5px 0 #00495c;
+}
+
+.box1-2 a[title="未來方向"]:hover{
+    background-color:#00647D;
+    color:white;
+    box-shadow: 7.5px 7.5px 0 #00495c;
+}
+
+.box1-2 a[title="關於我們"]:hover{
+    background-color:#00647D;
+    color:white;
+    box-shadow: 7.5px 7.5px 0 #00495c;
+}
+
+.box2{
+    width:100%;
+    height:170px;
+}
+
+.box3{
+    color:white;
+    font-size:50px;
+    font-family:'cwTeXKai',serif;
+}

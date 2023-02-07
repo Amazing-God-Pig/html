@@ -1,0 +1,194 @@
+body {
+    background-color: #AECCF2;/*rgb(81,168,211)*/
+    animation: animate 2s linear infinite;
+    transition: 0.5s;
+    min-height: 100vh;
+}
+
+.basemap {
+    /*--------*/
+    width: 400px;
+    height: 500px;
+    background-color:#00647D;
+    /*-----------------*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.basemap h1{
+    /*-----------*/
+    color:white;
+    /*--------------*/
+    width: 320px;
+    font-size: 40px;
+    /*-----------------*/
+    position: absolute;
+    bottom: 370px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.choose {
+    /*----------*/
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.choose select{
+    /*----------------*/
+    border-radius:15px;
+    border:4px solid #00495c;
+    padding:1px;
+    font-size:25px;
+}
+
+.enter {
+    /*----------*/
+    display: flex;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.enter input{
+    /*----------*/
+    outline:none;
+    border-radius:15px;
+    border:4px solid #00495c;
+    padding:5px;
+    font-size:20px;
+}
+
+.enter input[type="text"]:focus{
+    border-color:#00495c;
+    padding:10px;
+}
+
+.enter input[type="submit"]{
+    cursor:pointer;
+}
+
+.enter input[type="submit"]:hover{
+    border:2px solid black;
+    background-color:#00495c;
+    color:white;
+}
+
+.idea{
+    /*-------*/
+    width: 40px;
+    height: 40px;
+    background-color:#00495c;
+    font-size: 0px;
+    /*----------*/
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 400px;
+}
+
+.idea[class="idea"]:hover{
+    /*-------*/
+    width: 160px;
+    height: 40px;
+    background-color:#00495c;
+    font-size: 30px;
+    /*----------*/
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 400px;
+}
+
+.idea a{
+    /*------------*/
+    color:white;
+    text-decoration:none;
+}
+
+.futre{
+    /*-------*/
+    width: 40px;
+    height: 40px;
+    background-color:#00495c;
+    font-size: 0px;
+    /*----------*/
+    display: flex;
+    position: absolute;
+    top: 90px;
+    right: 400px;
+}
+
+.futre[class="futre"]:hover{
+    /*-------*/
+    width: 160px;
+    height: 40px;
+    background-color:#00495c;
+    font-size: 30px;
+    /*----------*/
+    display: flex;
+    position: absolute;
+    top: 90px;
+    right: 400px;
+}
+
+.futre a{
+    color:white;
+    text-decoration:none;
+}
+
+.bgscope{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bgball{
+    position: relative;
+    display: flex;
+}
+
+.bgball span{
+    position: relative;
+    width:30px;
+    height: 30px;
+    background: #F25278;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #AECCF2,
+                0 0 50px #F25278,
+                0 0 100px #F25278;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(100s /var(--i));
+    animation-name:www;
+}
+
+.bgball span:nth-child(2n){
+    background: #FFF176;
+    box-shadow: 0 0 0 10px #AECCF2,
+                0 0 50px #FFF176,
+                0 0 100px #FFF176;
+}
+
+.bgball span:nth-child(3n){
+    background: #67BF7F;
+    box-shadow: 0 0 0 10px #AECCF2,
+                0 0 50px #67BF7F,
+                0 0 100px #67BF7F;
+}
+
+@keyframes www{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
